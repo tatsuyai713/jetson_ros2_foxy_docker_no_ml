@@ -8,6 +8,21 @@ This container doesn't contain the machine learning libraries like PyTorch.
 please refer this.
 https://github.com/dusty-nv/jetson-containers/issues/108
 
+And add  runtime setting for nvidia gpu
+
+/etc/docker/daemon.json
+```
+{
+    "default-runtime": "nvidia", # add this line
+    ...
+    ...
+}
+```## (For Jetson User) Fix nvidia container
+8
+please refer this.
+9
+https://github.com/dusty-nv/jetson-containers/issues/108
+
 ## (For Jetson User) Disable nvidia library automount setting
 Nvidia container automatically mount host libraries (CUDA, CUDNN and so on).
 But sometimes, this function block the updating the software inside container.
