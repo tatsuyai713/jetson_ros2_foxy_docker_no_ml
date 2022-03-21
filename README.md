@@ -1,3 +1,7 @@
+# CURRENTLY THIS SCRIPTS CANNOT WORK CORRECTLY
+
+Because libc dependency is corrupted.
+
 # jetson_ros2_foxy_docker_no_ml
 Jetson Docker Container for ROS2 Foxy with CUDA, CUDNN and TensorRT
 
