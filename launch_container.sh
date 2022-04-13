@@ -1,6 +1,7 @@
 #!/bin/sh
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
+docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 
 NAME_IMAGE='jetson_ros2_foxy_no_ml'
 
